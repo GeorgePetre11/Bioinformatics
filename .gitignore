@@ -1,0 +1,22 @@
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+
+# Ignore IDE/project settings
+.idea/
+.vscode/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore data outputs or temporary files
+*.fasta~
+*.tmp
+*.log
+
+# Ignore Jupyter checkpoints if you use notebooks
+.ipynb_checkpoints/
+
+# Ignore virtual environments
+venv/
+.env/
