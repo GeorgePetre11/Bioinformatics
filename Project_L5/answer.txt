@@ -1,0 +1,14 @@
+Main Issue with This Algorithmic Approach:
+
+Even though this script merges fragments that share overlaps ≥10 bases, it still fails to
+reliably rebuild the original DNA sequence because:
+
+1. The algorithm is greedy, so it can pick wrong overlaps when multiple fragments share
+   similar subsequences.
+2. Repetitive DNA regions make overlap decisions ambiguous.
+3. Random sampling loses order and orientation information.
+4. Comparing fragments is computationally expensive (O(n²)).
+5. Sequencing errors or mutations would break overlaps completely.
+
+Real genome assemblers fix these problems using graph-based methods (de Bruijn graphs or
+overlap-layout-consensus) and probabilistic alignment scoring.
